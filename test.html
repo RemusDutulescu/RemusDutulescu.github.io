@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color Converter Test Page</title>
     
-    <!-- Add Web Tools script -->
-    <script src="https://everytool.online/embed/web-tools.js" defer></script>
+    <!-- Add Web Tools script with type="module" -->
+    <script type="module" src="https://everytool.online/embed/web-tools.js"></script>
     
     <style>
         body {
@@ -35,6 +35,12 @@
         .back-link:hover {
             text-decoration: underline;
         }
+
+        /* Add some spacing for the web component */
+        web-tool {
+            display: block;
+            margin: 20px 0;
+        }
     </style>
 </head>
 <body>
@@ -54,7 +60,20 @@
 
     <div class="container">
         <h2>Version 2: Web Component</h2>
-        <web-tool name="color-converter" theme="light"></web-tool>
+        <div id="web-tool-container">
+            <web-tool name="color-converter" theme="dark"></web-tool>
+        </div>
     </div>
+
+    <script>
+        // Add error handling for web component
+        window.addEventListener('error', function(e) {
+            if (e.message.includes('web-tool')) {
+                console.error('Error loading web component:', e);
+                document.getElementById('web-tool-container').innerHTML = 
+                    '<p>Error loading web component. Please check the console for details.</p>';
+            }
+        });
+    </script>
 </body>
 </html> 
