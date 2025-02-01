@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EveryTool Components Test Page</title>
+    
+    <!-- Add Web Tools script with type="module" -->
+    <script type="module" src="https://everytool.online/embed/web-tools.js"></script>
+    
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            max-width: 1800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            background: #f5f5f5;
+        }
+
+        .container {
+            margin: 40px 0;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            padding: 20px 0;
+            max-width: 1800px;
+            margin: 0 auto;
+        }
+
+        .tool-card {
+            background: white;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            min-width: 500px;
+        }
+
+        .tool-card h3 {
+            margin: 0 0 15px 0;
+            color: #333;
+            font-size: 1.2em;
+        }
+
+        web-tool {
+            display: block;
+            width: 100%;
+            min-height: 800px;
+        }
+
+        @media (max-width: 1600px) {
+            .tools-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .tools-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .nav-links {
+            margin: 20px 0;
+        }
+
+        .nav-links a {
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-links">
+        <a href="/" class="back-link">← Back to Resume</a>
+        <a href="/test.html" class="back-link">← Back to iFrame Test</a>
+    </div>
+    <h1>EveryTool Components Test Page</h1>
+
+    <div class="tools-grid">
+        <div class="tool-card">
+            <h3>Caesar Cipher</h3>
+            <web-tool name="caesar-cipher" theme="dark"></web-tool>
+        </div>
+        <div class="tool-card">
+            <h3>Character Counter</h3>
+            <web-tool name="character-counter" theme="dark"></web-tool>
+        </div>
+        <div class="tool-card">
+            <h3>Color Converter</h3>
+            <web-tool name="color-converter" theme="dark"></web-tool>
+        </div>
+        <div class="tool-card">
+            <h3>Factorial Calculator</h3>
+            <web-tool name="factorial-calculator" theme="dark"></web-tool>
+        </div>
+        <div class="tool-card">
+            <h3>Glitch Text Generator</h3>
+            <web-tool name="glitch-text-generator" theme="dark"></web-tool>
+        </div>
+        <div class="tool-card">
+            <h3>Golden Ratio Calculator</h3>
+            <web-tool name="golden-ratio-calculator" theme="dark"></web-tool>
+        </div>
+        <div class="tool-card">
+            <h3>Histogram Maker</h3>
+            <web-tool name="histogram-maker" theme="dark"></web-tool>
+        </div>
+        <div class="tool-card">
+            <h3>JSON to CSV Converter</h3>
+            <web-tool name="json-to-csv-converter" theme="dark"></web-tool>
+        </div>
+        <div class="tool-card">
+            <h3>Lyrics Generator</h3>
+            <web-tool name="lyrics-generator" theme="dark"></web-tool>
+        </div>
+        <div class="tool-card">
+            <h3>Morse Code Translator</h3>
+            <web-tool name="morse-code-translator" theme="dark"></web-tool>
+        </div>
+        <div class="tool-card">
+            <h3>Number to Words</h3>
+            <web-tool name="number-to-words" theme="dark"></web-tool>
+        </div>
+        <div class="tool-card">
+            <h3>PDF to Word Converter</h3>
+            <web-tool name="pdf-to-word-converter" theme="dark"></web-tool>
+        </div>
+        <div class="tool-card">
+            <h3>Pixel Density Calculator</h3>
+            <web-tool name="pixel-density-calculator" theme="dark"></web-tool>
+        </div>
+        <div class="tool-card">
+            <h3>Random Date Generator</h3>
+            <web-tool name="random-date-generator" theme="dark"></web-tool>
+        </div>
+        <div class="tool-card">
+            <h3>Regex Builder</h3>
+            <web-tool name="regex-builder" theme="dark"></web-tool>
+        </div>
+        <div class="tool-card">
+            <h3>Resistor Calculator</h3>
+            <web-tool name="resistor-calculator" theme="dark"></web-tool>
+        </div>
+        <div class="tool-card">
+            <h3>Reverse Text</h3>
+            <web-tool name="reverse-text" theme="dark"></web-tool>
+        </div>
+        <div class="tool-card">
+            <h3>Sim Racing FOV Calculator</h3>
+            <web-tool name="sim-racing-fov-calculator" theme="dark"></web-tool>
+        </div>
+        <div class="tool-card">
+            <h3>Split Bill Calculator</h3>
+            <web-tool name="split-bill-calculator" theme="dark"></web-tool>
+        </div>
+        <div class="tool-card">
+            <h3>Sudoku Solver</h3>
+            <web-tool name="sudoku-solver" theme="dark"></web-tool>
+        </div>
+        <div class="tool-card">
+            <h3>Syllable Counter</h3>
+            <web-tool name="syllable-counter" theme="dark"></web-tool>
+        </div>
+        <div class="tool-card">
+            <h3>Text to Braille Translator</h3>
+            <web-tool name="text-to-braille-translator" theme="dark"></web-tool>
+        </div>
+        <div class="tool-card">
+            <h3>URL Encoder</h3>
+            <web-tool name="url-encoder" theme="dark"></web-tool>
+        </div>
+        <div class="tool-card">
+            <h3>UUID Generator</h3>
+            <web-tool name="uuid-generator" theme="dark"></web-tool>
+        </div>
+        <div class="tool-card">
+            <h3>UUID Validator</h3>
+            <web-tool name="uuid-validator" theme="dark"></web-tool>
+        </div>
+        <div class="tool-card">
+            <h3>Voltage Divider Calculator</h3>
+            <web-tool name="voltage-divider-calculator" theme="dark"></web-tool>
+        </div>
+        <div class="tool-card">
+            <h3>XML Beautifier</h3>
+            <web-tool name="xml-beautifier" theme="dark"></web-tool>
+        </div>
+    </div>
+</body>
+</html> 
